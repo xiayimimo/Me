@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/goodstudy.css">
+
+    <script type="text/javascript"
+            src="../js/jquery.js"></script>
+    <script type="text/javascript"
+            src="..//js/highcharts.js"></script>
+    <script type="text/javascript"
+            src="../js/jquery.highchartTable.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('table.highchart').highchartTable();
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+
+    <div class="crumb">
+                <span class="breadcrumb">
+                  <a href="javascript:void(0);">后台</a>&gt;
+                  <a href="javascript:void(0);">基础资料</a>&gt;
+                  <a href="javascript:void(0);">标签管理</a>
+                </span>
+                <span class="operatebar">
+                    <!--<input type="button" class="btn normal" value="统计" id="tongji"/>-->
+                </span>
+    </div>
+
+
+    <!-- data-graph-container-before:1,table前显示图表, data-graph-type: 图表类型-->
+    <table class="highchart" data-graph-container="#charts" data-graph-height="550"  data-graph-width="550" data-graph-type="pie">
+        <caption>饼状图</caption>
+        <thead>
+        <tr>
+            <th>名称</th>
+            <th>统计</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+
+            <td>已答</td>
+            <td>800</td>
+
+
+        </tr>
+        <tr>
+
+            <td>未答</td>
+            <td>200</td>
+
+        </tr>
+        <tr>
+
+            <td>结帖</td>
+            <td>500</td>
+
+
+        </tr>
+
+
+
+        </tbody>
+    </table>
+
+    <div id="charts">
+
+
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
